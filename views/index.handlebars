@@ -1,0 +1,31 @@
+<div class="jumbotron">
+  <h1 class="display-4">bem vindo </h1>
+  <p class="lead">meu blog de tecnologia</p>
+  <hr class="my-4">
+  <p>aqui você ler sobre tecnologias</p>
+  <a href="/usuario/registro" class="btn btn-primary btn-lg" href="" role="button">criar uma conta</a>
+</div>
+
+<hr>
+
+<H2>postagens recentes :</H2>
+
+{{#each postagens}}
+<div class="card mt-4">
+<div class="card-body">
+ 
+   
+
+<h2>{{titulo}}</h2>
+<p>{{descriçao}}</p>
+<a href="/publico/postagem/{{slug}}"><button class="btn btn-success">ler mais</button></a>
+  <hr>
+
+<small>categoria: {{categoria.nome}}</small>
+<small>data: {{date}}</small>
+
+</div>
+</div>
+{{else}}
+
+{{/each}}
